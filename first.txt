@@ -1,1 +1,56 @@
-<?php
+//Gitをインストール
+ootakenoMacBook-Air:Paiza reikaotake$ git init
+Initialized empty Git repository in /Users/reikaotake/Documents/apprentice/Paiza/.git/
+
+//インストールできたか確認
+ootakenoMacBook-Air:Paiza reikaotake$ git -v
+git version 2.39.2 (Apple Git-143)
+
+//変更をステージに追加
+ootakenoMacBook-Air:Paiza reikaotake$ git add a.php
+
+//追加できたか確認する
+ootakenoMacBook-Air:Paiza reikaotake$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   a.php
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        JS/
+        at.php
+        b.php
+        c.php
+        l.php
+        m.php
+        ruisekiwa_2_4.php
+        t.php
+
+
+//コミットする
+ootakenoMacBook-Air:Paiza reikaotake$ git commit -m "first commit"
+[main (root-commit) 0e39437] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 a.php
+
+//リモートリポジトリを繋げる
+ootakenoMacBook-Air:Paiza reikaotake$ git remote add origin https://github.com/rereika/first-repo.git
+
+//正く設定されているか確認
+ootakenoMacBook-Air:Paiza reikaotake$ git remote -v
+origin  https://github.com/rereika/first-repo.git (fetch)
+origin  https://github.com/rereika/first-repo.git (push)
+
+//変更をpushする
+ootakenoMacBook-Air:Paiza reikaotake$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 208 bytes | 208.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/rereika/first-repo.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
