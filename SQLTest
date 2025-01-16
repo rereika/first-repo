@@ -1,0 +1,11 @@
+
+//問題1
+SELECT name, salary
+FROM employees
+WHERE department = 'IT';
+
+
+//問題2
+SELECT department, AVG(salary) AS average_salary
+FROM employees
+GROUP BY department;
