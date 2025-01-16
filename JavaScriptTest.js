@@ -1,3 +1,5 @@
+
+//問題1
 for (let i = 1; i <= 20; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
     console.log("FizzBuzz");
@@ -9,3 +11,12 @@ for (let i = 1; i <= 20; i++) {
     console.log(i);
   }
 }
+
+
+//問題2
+function findMax(array) {
+  return Math.max(...array);
+}
+
+const numbers = [10, 5, 8, 10, 3];
+console.log(findMax(numbers));
