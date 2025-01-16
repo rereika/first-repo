@@ -1,0 +1,12 @@
+//現在のブランチを確認する
+ootakenoMacBook-Air:Paiza reikaotake$ git branch
+* main
+
+//feature/loginブランチを作成する
+ootakenoMacBook-Air:Paiza reikaotake$ git checkout -b feature/login
+Switched to a new branch 'feature/login'
+
+//作成できたか確認する
+ootakenoMacBook-Air:Paiza reikaotake$ git branch
+* feature/login
+  main
